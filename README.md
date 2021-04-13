@@ -17,10 +17,18 @@ To run a simulation:
 1) Make sure the pos file is in the pos folder
 2) The source code in the main folder is compiled to make the executable with the command:  mpicxx -std=c++11 Rad_Depth_1.0.cpp -o Rad_Depth_1.0
 3) The executable is run using MPI with the command: mpirun -np 10 Rad_Depth_1.0 (where the number of processors is 10 in this case)
-4) 
+4) Input parameters are be requested by the program:
 
+"Enter number of photons in scientific notation (ex: 1e5):" This refers to the number of photons PER PROCESSOR which will be emitted.
+"Enter nominal volume fraction (must be in format 0.XX):" The volume fraction (solid fraction) of particles, for keeping track of input/output files
+"Enter number of particles:" This must match the actual number of particles, or lines in the pos file.
+"Enter absorptivity of the particles (format 0.XX):"  
+"Enter LIGGGHTS timestep number (format XXXXXX):" Simply for naming the input/output files
+"Enter radius of the particles (meters):"
+"Enter the xy max to emit photons from. Square is from x=+/- this value and y=+/- this value.  (meters):" Photons are emitted from a random location from inside the square of emission, which is parallel to the z-plane and has a maximum x and y value defined here.  
+"Enter the z plane to emit photons from (meters):" The z-position of the square of emission. 
+"Enter the incidence angle (angle between the xy plane the emitted rays) in degrees:"
 
+(Alternatively, these values can be hard-coded into the source code, which is sometimes easier to work with. There is a commented-out block near the beginning of the code where these values can be hard-coded. Of course, the code must be recompiled each time a parameter is changed in that case.) 
 
-The input parameters will be requrested by the program:
-
-The user specifies the independent 
+One final input parameter, which is not included in these initial questions, is the specular/diffuse choice. This must be changed in the source code by changing "specular=true" for specular reflections and "specular=false" for diffuse reflections.  
