@@ -11,7 +11,7 @@ Particle beds of up to ~100,000 particles are acceptable (memory runs out if try
 
 The code is written in parallel C++, developed Ubuntu 16.04.
 
-If you use the concepts, equation or code from this project, please cite one of the following articles:
+If you use the concepts, equations or code from this project, please cite one of the following articles:
 
 [1] E.F. Johnson, İ. Tarı, D. Baker, Radiative heat transfer in the discrete element method using distance based approximations, Powder Technol. 380 (2021) 164–182. doi:10.1016/j.powtec.2020.11.050.
 
