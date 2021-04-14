@@ -18,6 +18,7 @@ If you use the concepts, equations or code from this project, please cite one of
 [2] E. Johnson, İ. Tarı, D. Baker, A Monte Carlo method to solve for radiative effective thermal conductivity for particle beds of various solid fractions and emissivities, J. Quant. Spectrosc. Radiat. Transf. 250 (2020). doi:https://doi.org/10.1016/j.jqsrt.2020.107014.
 
 
+This code was developed for my research, but I am sharing it with others in the spirit of open source collaboration. It has been validated in several peer-reviewed articles, but it is provided without any guarantees. 
 
 
 Evan
