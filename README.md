@@ -1,5 +1,6 @@
 # Radiation-Penetration-Depth-in-Particle-Beds
 Monte Carlo Ray Tracing for beam radiation striking a particle bed.
+It is written in C++ and does parallel computations with MPI.
 
 The xyz center positions of the particles in the particle bed are supplied by the user. The code simulates emitted photons (rays) from a plane above the bed, with a specified incidence angle. Photons are followed through possibly multiple reflections off particles, until the photon is absorbed in a particle. The output files contain the locations where photons are absorbed. 
 
